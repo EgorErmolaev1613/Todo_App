@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="taskField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todo_app.HelloController">
+   <children>
+      <AnchorPane layoutY="64.0" prefHeight="336.0" prefWidth="600.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TextField fx:id="toDoField" layoutX="42.0" layoutY="49.0" prefHeight="26.0" prefWidth="262.0" promptText="Опишите вашу задачу!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="addTaskButton" layoutX="331.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" text="Добавить" />
+            <Button fx:id="printTasksButton" layoutX="81.0" layoutY="254.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" text="Вывести задачи в консоль" />
+            <Button fx:id="clear" layoutX="364.0" layoutY="254.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" text="Очистить задачи" />
+            <TextArea fx:id="textArea" layoutX="90.0" layoutY="105.0" prefHeight="140.0" prefWidth="436.0" promptText="Тут отображаются ваши задачи" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="246.0" layoutY="14.0" prefHeight="34.0" prefWidth="107.0" text="Todo App" textFill="#d1bcbc">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
